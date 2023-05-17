@@ -445,3 +445,58 @@ a:hover {
 }
 
 /*finaliza header y vista principal*/
+
+/*inicia bio pagina principal*/
+.Bio{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.textoBio{
+  display: flex;
+  background-color: yellow;
+  align-items: center;
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.imgBio{
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-right: 100%;
+}
+/*finaliza bio pagina principal*/
+
+/*incia vista de producciones pagina principal*/
+.produccion{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.imgProduccion{
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-right: 100%;
+  width: 300px;
+  height: 300px;
+}
+.textoProduccion{
+  display: flex;
+  background-color: yellow;
+  align-items: center;
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.sectionProduccion{
+  margin-top: 1%;
+  margin-left: 10%;
+  margin-right: 30%;
+}
+.tituloproduccion{
+  text-align: center;
+  text-decoration: underline;
+  color: #f3c23f;
+}
+/*finaliza vista de producciones pagina principal*/
