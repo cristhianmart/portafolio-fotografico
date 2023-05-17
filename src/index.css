@@ -234,6 +234,7 @@
 }
 
 .inputmensaje {
+
     display: flex;
     background-color: white;
     border-radius: 50px;
@@ -261,6 +262,37 @@
     font-family: 'Roboto Mono', monoespaciado;
     font-size: 30px;
     color: black;
+
+  display: flex;
+  background-color: white;
+  border-radius: 30px;
+  border-style: solid 10px;
+  height: 350px;
+  width: 600px;
+  border-color: #F3C623;
+  margin-top: 25px;
+  padding: 2px;
+  font-family: 'Roboto Mono', monoespaciado;
+  font-size: 30px;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.buttoncontacto {
+  background-color: #F3C623;
+  height: 72px;
+  width: 130px;
+  border-radius: 30px;
+  border-color: black;
+  padding: 10px;
+  margin-left: 40%;
+  margin-top: 30px;
+  font-family: 'Roboto Mono', monoespaciado;
+  font-size: 30px;
+  color: black;
+  text-align: center;
+
 }
 
 .fotografo {
@@ -426,3 +458,60 @@ a:hover {
 }
 
 /*finaliza header y vista principal*/
+
+
+/*inicia bio pagina principal*/
+.Bio{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.textoBio{
+  display: flex;
+  background-color: yellow;
+  align-items: center;
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.imgBio{
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-right: 100%;
+}
+/*finaliza bio pagina principal*/
+
+/*incia vista de producciones pagina principal*/
+.produccion{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.imgProduccion{
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-right: 100%;
+  width: 300px;
+  height: 300px;
+}
+.textoProduccion{
+  display: flex;
+  background-color: yellow;
+  align-items: center;
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.sectionProduccion{
+  margin-top: 1%;
+  margin-left: 10%;
+  margin-right: 30%;
+}
+.tituloproduccion{
+  text-align: center;
+  text-decoration: underline;
+  color: #f3c23f;
+}
+/*finaliza vista de producciones pagina principal*/
+
