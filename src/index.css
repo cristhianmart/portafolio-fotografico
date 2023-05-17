@@ -235,7 +235,7 @@ background-color: black;
 .inputmensaje {
   display: flex;
   background-color: white;
-  border-radius: 50px;
+  border-radius: 30px;
   border-style: solid 10px;
   height: 350px;
   width: 600px;
@@ -261,6 +261,7 @@ background-color: black;
   font-family: 'Roboto Mono', monoespaciado;
   font-size: 30px;
   color: black;
+  text-align: center;
 }
 
 .fotografo {

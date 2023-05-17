@@ -12,17 +12,17 @@ function Contacto() {
 
    function sendEmail(e) {
       e.preventDefault();
-      if (nombre === "" || email === "" || mensaje === "") {
+      if (nombre === '' || apellido === '' || telefono === '' || email === '' || mensaje === '') {
          alert("Todos los campos son requeridos");
          return;
       }
 
       const templateParams = {
-         from_nombre: nombre,
-         telefono: telefono,
-         apellido: apellido,
-         mensaje: mensaje,
-         email: email,
+      from_nombre: nombre,
+      apellido: apellido,
+      telefono: telefono,
+      mensaje: mensaje,
+      email: email,
       };
       emailjs
          .send(
@@ -80,10 +80,10 @@ function Contacto() {
                      onChange={(e) => setEmail(e.target.value)}
                      value={email}
                   />
-                  <input
+                  <textarea
                      className="inputmensaje"
                      type="text"
-                     placeholder="Escriba su mensaje"
+                     placeholder=" Escriba su mensaje"
                      onChange={(e) => setMensaje(e.target.value)}
                      value={mensaje}
                   />
