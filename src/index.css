@@ -368,52 +368,48 @@
     font-family: 'Roboto', sans-serif;
 }
 
-.encabezado {
-    background-color: black;
-    border-bottom: solid 3px #f3c23f;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+body {
     width: 100%;
-    text-decoration: none;
-    margin-right: 5%;
-}
-
-.logo {
+    height: 100vh;
+  }
+  
+  .encabezado {
+    width: 100%;
+    height: 20%;
+    background: linear-gradient(90deg, black , #f3c23f );
+  
+  }
+  
+  .menu {
+    display: flex;
+    
+  }
+  
+  .logo {
     width: 30%;
     display: flex;
     margin-left: 20%;
     align-items: center;
     height: 200px;
-}
-
-.encabezado img {
-    width: 150px;
-    background-color: yellow;
-}
-
-.insta {
-    width: 0%;
+   
+  }
+  .logo {
+  width: 150px;
+  height: 150px;
+  
+    
+  
+  }
+  .menu-navegacion {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 80px;
-}
-
-.img:hover {
-    opacity: 0.3;
-}
-
-.menu-navegacion {
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 100px;
-
-    text-decoration: none;
-}
-
+    justify-content: space-evenly;
+  }
+  .menu-navegacion a{
+    margin: auto;
+    text-decoration:none;
+  
+    
+  }
 .boton {
     border-radius: 200px;
     text-decoration: none;
