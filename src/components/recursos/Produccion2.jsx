@@ -1,6 +1,6 @@
 
-import Header from './Header'
-import mcdonals from '../assets/img/mcdonalds.png'
+import Header from '../helpers/Header'
+import mcdonals from '../../assets/img/mcdonalds.png'
 
 const Produccion2 = () => {
   return (

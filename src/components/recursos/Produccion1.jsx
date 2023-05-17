@@ -1,6 +1,6 @@
 import React from 'react'
-import Header from './Header'
-import burguerKing from '../assets/img/burguerKing.png'
+import Header from '../helpers/Header'
+import burguerKing from '../../assets/img/burguerKing.png'
 
 const Produccion1 = () => {
   return (

@@ -1,6 +1,6 @@
 import React from 'react'
-import Header from './Header'
-import fotoB from '../assets/img/bio.jpg'
+import Header from '../helpers/Header'
+import fotoB from '../../assets/img/bio.jpg'
 
 
 

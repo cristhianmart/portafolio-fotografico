@@ -1,5 +1,6 @@
-import Header from './Header'
-import aptlujo from '../assets/img/lujoapt.jpg'
+import React from 'react'
+import Header from '../helpers/Header'
+import aptlujo from '../../assets/img/lujoapt.jpg'
 
 const Produccion4 = () => {
   return (
