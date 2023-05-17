@@ -1,5 +1,5 @@
-import Header from './Header'
-import deli from '../assets/img/deli.jpg'
+import Header from '../helpers/Header'
+import deli from '../../assets/img/deli.jpg'
 
 const Produccion3 = () => {
   return (

@@ -1,5 +1,5 @@
-import Header from './Header'
-import casalujo from '../assets/img/casa-lujo.jpg'
+import Header from '../helpers/Header'
+import casalujo from '../../assets/img/casa-lujo.jpg'
 
 const Produccion5 = () => {
   return (
