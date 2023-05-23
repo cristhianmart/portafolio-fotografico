@@ -1,25 +1,22 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import logo from '../../assets/img/Camara-logo.png'
-import insta from '../../assets/img/instagram.jpg'
+import logo from '../../assets/img/foto.png'
 
 const Header = () => {
   return (
     <header className='encabezado'>
-      <section className='menu-navegacion'>
+      <nav className='menu-navegacion'>
+        <section className='menu'>
+
         <Link to={'/'}>INICIO</Link>
         <Link to={'/bio'}>BIO</Link>
         <Link to={'/contacto'}>CONTACTO</Link>
-    
-      </section>
-      <section>
-      <a href='https://www.instagram.com/' target="_blank"><img src={insta} alt='' className='insta'/></a>
-      </section>
-      <section className='logo'>
-      
-      <img src={logo} alt="Logo" />
-         
-      </section>
+        </section>
+        
+  
+        <img src={logo} alt="" className='logo'/>   
+   
+      </nav>
       
     </header>
   )
