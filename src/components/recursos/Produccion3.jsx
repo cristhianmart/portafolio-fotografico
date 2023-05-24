@@ -1,11 +1,13 @@
 import Header from '../helpers/Header'
 import deli from '../../assets/img/deli.jpg'
+import Footer from '../helpers/Footer'
+import { Link } from 'react-router-dom'
 
 const Produccion3 = () => {
   return (
-    <section>
+    <section className='fondoproduccion'>
         <Header/>
-        <h1 className='tituloproduccion'>DELI BURGUERS</h1>
+        <p className='tituloproduccion'>DELI BURGUERS</p>
     <section className='produccion'>
       <div>
       <img src={deli} alt="" className='imgProduccion'/> 
@@ -19,16 +21,15 @@ const Produccion3 = () => {
         </div>
         </section>
        <div className='sectionProduccion'>
-       <img src={deli} alt="" className='imagenes'/>
-        <img src={deli} alt="" className='imagenes'/>
-        <img src={deli} alt="" className='imagenes'/>
-       </div>
-
-        <div className='sectionProduccion'>
-        <img src={deli} alt="" className='imagenes'/>
-        <img src={deli} alt="" className='imagenes'/>
+       <Link><img src={deli} alt="" className='imagenes'/></Link>
+       <Link><img src={deli} alt="" className='imagenes'/></Link>
+       <Link><img src={deli} alt="" className='imagenes'/></Link>
+       <Link><img src={deli} alt="" className='imagenes'/></Link>
+       <Link><img src={deli} alt="" className='imagenes'/></Link>
+       <Link><img src={deli} alt="" className='imagenes'/></Link>
       
         </div>
+        <Footer/>
     </section>
   )
 }
