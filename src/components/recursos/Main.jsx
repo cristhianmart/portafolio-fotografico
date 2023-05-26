@@ -6,6 +6,7 @@ import mcdonals from '../../assets/img/mcdonalds.png'
 import deli from '../../assets/img/deli.jpg'
 import aptlujo from '../../assets/img/lujoapt.jpg'
 import casalujo from '../../assets/img/casa-lujo.jpg'
+import Footer from '../helpers/Footer'
 
 const Main = () => {
   return (
@@ -19,7 +20,7 @@ const Main = () => {
         <Link to={'/produccion4'} className='boton'><img src={aptlujo} alt="" className='imagenes'/>Apartamentos de lujo</Link>
         <Link to={'/produccion5'} className='boton'><img src={casalujo} alt="" className='imagenes'/>Casas de lujo</Link>
       </section>
-     
+      <Footer/>
     </>
     
   )

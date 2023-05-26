@@ -411,10 +411,14 @@ body {
     
   }
 .boton {
-    border-radius: 200px;
+    border-radius: 20px;
     text-decoration: none;
     justify-content: center;
-    color: white;
+    color: black;
+    text-align: center;
+    background-color: #f3c23f;
+    margin-left: 3%;
+    margin-block-end: 2%;
 }
 
 a {
@@ -436,22 +440,38 @@ a:hover {
 .imagenes {
     width: 300px;
     height: 300px;
+    border-radius: 5%;
+    margin-left: 10%;
+    margin-top: 1%;
+   
 }
 
 .vistapp {
     background-color: black;
     width: 100%;
     height: 100%;
-    padding-top: 40px;
+    padding-top: 2%;
     display: flex;
-    gap: 150px;
+    gap: 200px;
     flex-wrap: wrap;
 }
 
 .footer {
-    color: white;
-    background-color: white;
+ 
+    margin-top: 0.5%;
+    width: 100%;
+    height: 20%;
+    color: black;
+    text-align: center;
+    background: linear-gradient(90deg,#f3c23f, black  );
 }
+  .imginsta{
+    flex-wrap: wrap;
+    width: 100px;
+    height: 100px;
+    margin-left: 80%; 
+  }
+  
 
 /*finaliza header y vista principal*/
 
@@ -462,19 +482,22 @@ a:hover {
   align-items: center;
   justify-content: center;
   height: 100vh;
+  background-color: black;
 }
 .textoBio{
   display: flex;
-  background-color: yellow;
+  background-color: #f3c23f;
   align-items: center;
   margin-top: 5%;
   margin-left: 5%;
   margin-right: 5%;
+  border-radius: 10%;
 }
 .imgBio{
   margin-top: 5%;
   margin-left: 5%;
   margin-right: 100%;
+  
 }
 /*finaliza bio pagina principal*/
 
@@ -483,31 +506,40 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+  
+}
+.fondoproduccion{
+    background-color: black;
 }
 .imgProduccion{
-  margin-top: 5%;
-  margin-left: 5%;
+  margin-top: 15%;
+  margin-left: 15%;
   margin-right: 100%;
   width: 300px;
   height: 300px;
+  border-radius: 5%;
 }
 .textoProduccion{
   display: flex;
-  background-color: yellow;
+  background-color: #f3c23f;
+  border-radius: 10%;
   align-items: center;
   margin-top: 5%;
   margin-left: 5%;
   margin-right: 5%;
 }
 .sectionProduccion{
-  margin-top: 1%;
-  margin-left: 10%;
-  margin-right: 30%;
+  margin-top: 2%;
+  margin-left: 12%;
+  margin-right: 3%;
+  height: 10%;
+  
 }
 .tituloproduccion{
   text-align: center;
   text-decoration: underline;
   color: #f3c23f;
+  margin-top: 5%;
 }
 /*finaliza vista de producciones pagina principal*/
 

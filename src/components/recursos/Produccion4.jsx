@@ -1,12 +1,14 @@
 import React from 'react'
 import Header from '../helpers/Header'
 import aptlujo from '../../assets/img/lujoapt.jpg'
+import Footer from '../helpers/Footer'
+import { Link } from 'react-router-dom'
 
 const Produccion4 = () => {
   return (
-    <section>
+    <section className='fondoproduccion'>
         <Header/>
-        <h1 className='tituloproduccion'>APARTAMENTOS DE LUJO</h1>
+        <p className='tituloproduccion'>APARTAMENTOS DE LUJO</p>
     <section className='produccion'>
       <div>
       <img src={aptlujo} alt="" className='imgProduccion'/> 
@@ -20,16 +22,15 @@ const Produccion4 = () => {
         </div>
         </section>
        <div className='sectionProduccion'>
-       <img src={aptlujo} alt="" className='imagenes'/>
-        <img src={aptlujo} alt="" className='imagenes'/>
-        <img src={aptlujo} alt="" className='imagenes'/>
-       </div>
-
-        <div className='sectionProduccion'>
-        <img src={aptlujo} alt="" className='imagenes'/>
-        <img src={aptlujo} alt="" className='imagenes'/>
+       <Link><img src={aptlujo} alt="" className='imagenes'/></Link>
+       <Link><img src={aptlujo} alt="" className='imagenes'/></Link>
+       <Link><img src={aptlujo} alt="" className='imagenes'/></Link>
+       <Link><img src={aptlujo} alt="" className='imagenes'/></Link>
+       <Link><img src={aptlujo} alt="" className='imagenes'/></Link>
+       <Link><img src={aptlujo} alt="" className='imagenes'/></Link>
       
         </div>
+        <Footer/>
     </section>
   )
 }

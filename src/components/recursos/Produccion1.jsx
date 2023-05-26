@@ -1,12 +1,14 @@
 import React from 'react'
 import Header from '../helpers/Header'
 import burguerKing from '../../assets/img/burguerKing.png'
+import Footer from '../helpers/Footer'
+import { Link } from 'react-router-dom'
 
 const Produccion1 = () => {
   return (
-    <section>
+    <section className='fondoproduccion'>
         <Header/>
-        <h1 className='tituloproduccion'>BURGUER KING</h1>
+        <p className='tituloproduccion'>BURGUER KING</p>
     <section className='produccion'>
       <div>
       <img src={burguerKing} alt="" className='imgProduccion'/> 
@@ -20,17 +22,15 @@ const Produccion1 = () => {
         </div>
         </section>
        <div className='sectionProduccion'>
-       <img src={burguerKing} alt="" className='imagenes'/>
-        <img src={burguerKing} alt="" className='imagenes'/>
-        <img src={burguerKing} alt="" className='imagenes'/>
-       </div>
-
-        <div className='sectionProduccion'>
-        <img src={burguerKing} alt="" className='imagenes'/>
-        <img src={burguerKing} alt="" className='imagenes'/>
-      
+      <Link><img src={burguerKing} alt="" className='imagenes'/></Link>
+      <Link><img src={burguerKing} alt="" className='imagenes'/></Link> 
+      <Link><img src={burguerKing} alt="" className='imagenes'/></Link> 
+      <Link><img src={burguerKing} alt="" className='imagenes'/></Link>  
+      <Link><img src={burguerKing} alt="" className='imagenes'/></Link> 
+      <Link><img src={burguerKing} alt="" className='imagenes'/></Link> 
+        
         </div>
-    
+    <Footer/>
     </section>
   )
 }

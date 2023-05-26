@@ -2,6 +2,7 @@ import { useState } from "react";
 import emailjs from "@emailjs/browser";
 import fotografo from "../../assets/img/fotografo.jpg";
 import Header from "../helpers/Header";
+import Footer from "../helpers/Footer";
 
 function Contacto() {
    const [nombre, setNombre] = useState("");
@@ -98,7 +99,9 @@ function Contacto() {
                </div>
             </div>
          </section>
+         <Footer/>
       </section>
+     
    );
 }
 

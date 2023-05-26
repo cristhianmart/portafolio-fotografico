@@ -1,11 +1,13 @@
 import Header from '../helpers/Header'
 import casalujo from '../../assets/img/casa-lujo.jpg'
+import Footer from '../helpers/Footer'
+import { Link } from 'react-router-dom'
 
 const Produccion5 = () => {
   return (
-    <section>
+    <section className='fondoproduccion'>
         <Header/>
-        <h1 className='tituloproduccion'>CASAS DE LUJO</h1>
+        <p className='tituloproduccion'>CASAS DE LUJO</p>
     <section className='produccion'>
       <div>
       <img src={casalujo} alt="" className='imgProduccion'/> 
@@ -19,16 +21,15 @@ const Produccion5 = () => {
         </div>
         </section>
        <div className='sectionProduccion'>
-       <img src={casalujo} alt="" className='imagenes'/>
-        <img src={casalujo} alt="" className='imagenes'/>
-        <img src={casalujo} alt="" className='imagenes'/>
-       </div>
-
-        <div className='sectionProduccion'>
-        <img src={casalujo} alt="" className='imagenes'/>
-        <img src={casalujo} alt="" className='imagenes'/>
+       <Link><img src={casalujo} alt="" className='imagenes'/></Link>
+       <Link><img src={casalujo} alt="" className='imagenes'/></Link>
+       <Link><img src={casalujo} alt="" className='imagenes'/></Link>
+       <Link><img src={casalujo} alt="" className='imagenes'/></Link>
+       <Link><img src={casalujo} alt="" className='imagenes'/></Link>
+       <Link><img src={casalujo} alt="" className='imagenes'/></Link>
       
         </div>
+        <Footer/>
     </section>
   )
 }
