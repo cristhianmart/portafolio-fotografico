@@ -56,8 +56,8 @@ const router = createBrowserRouter([
    },
    //inicia login
    {
-      path: "/login",
-      element: <Login />,
+      path: "/admin",
+      element: <Admin />,
       errorElement: <h1>Pagina no encontrada</h1>,
    },
    //inicia administrador

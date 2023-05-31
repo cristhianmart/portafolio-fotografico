@@ -28,7 +28,7 @@ function Login() {
             </div>
           </div>
           <div className='cont-btnlogin'>
-          <input className="buttonlogin" type="submit" value="Login" />
+          <Link className="buttonlogin" to={'/gestion'}>Login</Link>
           </div>
         </div>
       </div>
