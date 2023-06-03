@@ -5,7 +5,7 @@ import { addDoc, collection } from "firebase/firestore";
 
 
 const Cargarimg = () => {
-   const [nombreProd, setNombreProd] = useState('');
+    const [nombreProd, setNombreProd] = useState('');
     const [urlImg, setUrlImg] = useState('');
     const [descriProd, setDescriProd] = useState('');
     const [nombreImg, setNombreImg] = useState('');
@@ -53,8 +53,8 @@ const Cargarimg = () => {
                 </section>
 
 
-                <button onClick={agregarProduccion} className="guardar">Guardar</button>
-                <button onClick={limpiarCampos} className="guardar">Cancelar</button>
+                <button onClick={agregarProduccion} className="btnadmi">Guardar</button>
+                <button onClick={limpiarCampos} className="btnadmi">Cancelar</button>
             </section>
 
         </section>

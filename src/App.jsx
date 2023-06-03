@@ -11,6 +11,7 @@ import Login from "./components/recursos/Login";
 import Cargarimg from "./components/recursos/Cargarimg";
 import Gestionprod from "./components/recursos/Gestionprod";
 import Modificarbio from "./components/recursos/Modificarbio";
+import Editarprod from "./components/recursos/Editarprod";
 
 const router = createBrowserRouter([
    {
@@ -74,6 +75,11 @@ const router = createBrowserRouter([
    {
       path: "/modificarbio",
       element: <Modificarbio />,
+      errorElement: <h1>Pagina no encontrada</h1>,
+   },
+   {
+      path: "/editar/:id",
+      element: <Editarprod />,
       errorElement: <h1>Pagina no encontrada</h1>,
    },
 ]);
