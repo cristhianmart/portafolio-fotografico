@@ -3,8 +3,6 @@ import fotousu from '../../assets/img/fotousu.png'
 
 function Login() {
   return (
-
-
     <section className='login'>
       <div className='fotousuario'>
         <img src={fotousu} />

@@ -56,114 +56,51 @@
 /*Fin nav*/
 
 /*Inicia upload*/
-
 .panel-container {
-    display: flex;
-    background-color: black;
+  background: linear-gradient(90deg, black 60%, #f3c23f);
+  display: flex;
 }
 
 .panel {
-    width: 80%;
-    display: flex;
-    gap: 10px;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    border: solid 3px #f3c23f;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
 }
 
+
 .panel-carga {
-    border: solid 1px black;
-    height: fit-content;
-    width: 40%;
-    padding: 1%;
-    border: solid 3px #f3c23f;
+
+  border: solid 1px black;
+  height: fit-content;
+  width: 40%;
+  padding: 1%;
+  border: solid 3px #f3c23f;
 }
 
 .nombre {
-    color: #f3c23f;
+  color: #f3c23f;
 }
 
-.panel-carga input[type='file'] {
-    border-radius: 15px;
-    padding: 10px;
-    margin: 10px;
-    color: white;
+
+.panel-carga input[type="file"] {
+
+  border-radius: 15px;
+  padding: 10px;
+  margin: 10px;
+  color: white;
 }
 
 .file:hover {
-    color: blue;
+  color: blue;
 }
 
 .vista-previa {
-    background-color: black;
-    height: fit-content;
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    color: white;
-    padding: 5%;
-    border: solid 3px #f3c23f;
-}
 
-.panel-categoria {
-    color: #f3c23f;
-    border-radius: 15px;
-    height: fit-content;
-    width: fit-content;
-    display: flex;
-    align-content: space-evenly;
-    gap: 20px;
-    padding: 1%;
-}
-
-.checkbox {
-    margin-right: 500px;
-}
-
-.guardar {
-    background-color: #f3c23f;
-    width: 10%;
-    padding: 10px;
-    font-size: medium;
-    font-weight: bolder;
-    border-radius: 15px;
-}
-
-.texto {
-    width: 70%;
-}
-
-/* Finaliza upload */
-
-/*Inicia Gestionprod */
-
-.panel-conf {
-    height: fit-content;
-    width: 90%;
-    border-radius: 15px;
-    padding: 10px;
-    display: flex;
-    justify-content: space-around;
-}
-
-.vista-modificar {
-    background-color: black;
-    height: fit-content;
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    color: white;
-    padding: 5%;
-    border: solid 3px #f3c23f;
-    display:none;
-}
-
-.vista-modificar2 {
   background-color: black;
   height: fit-content;
   width: 90%;
@@ -174,8 +111,75 @@
   color: white;
   padding: 5%;
   border: solid 3px #f3c23f;
+}
+
+.panel-categoria {
+
+  color: #f3c23f;
+  border-radius: 15px;
+  height: fit-content;
+  width: fit-content;
+  display: flex;
+  align-content: space-evenly;
+  gap: 20px;
+  padding: 1%;
+
 
 }
+
+
+.guardar {
+  background-color: #f3c23f;
+  width: 10%;
+  padding: 10px;
+  font-size: medium;
+  font-weight: bolder;
+  border-radius: 15px;
+}
+
+.texto {
+  width: 70%;
+}
+
+.btn-admi {
+  width: 1000px;
+}
+
+
+
+/* Finaliza upload */
+
+/*Inicia Gestionprod */
+.panel-gestion {
+    background: linear-gradient(90deg, black 60%, #f3c23f);
+    display: flex;
+    border: solid 2px blue;
+}
+
+.panel-consulta {
+    display: flex;
+    justify-content: space-around;
+    align-items:center ;
+    width: 100%;
+    flex-direction: column;
+}
+
+.card {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card img {
+    width: 400px;
+    height: 300px;
+    margin: 10px 10px;
+    border: solid 1px white;
+}
+
+
 
 .btnadmi {
     background-color: #f3c23f;
@@ -186,9 +190,7 @@
     border-radius: 15px;
 }
 
-.panel-vpalbum {
-    color: #f3c23f;
-}
+
 
 /*termina Gestionprod*/
 

@@ -1,37 +1,64 @@
-import React from "react";
+import {useState} from "react";
 import Nav from "../helpers/Nav";
+import { dataBase } from '../Firebase/Config'
+import { addDoc, collection } from "firebase/firestore";
+
 
 const Cargarimg = () => {
+   const [nombreProd, setNombreProd] = useState('');
+    const [urlImg, setUrlImg] = useState('');
+    const [descriProd, setDescriProd] = useState('');
+    const [nombreImg, setNombreImg] = useState('');
+    const [categoria, setCategoria] = useState('');
+
+    const campos = [document.querySelector("#produccion"), document.querySelector("#url"), document.querySelector("#nombre"), document.querySelector("#descripcion")]
+    const check = [document.querySelector("#radio1"), document.querySelector("#radio2")]
+    async function agregarProduccion() {
+        const nuevaProduccion = collection(dataBase, 'Producciones')
+        const produccion = {
+            url: urlImg,
+            descripcion: descriProd,
+            categoria: categoria,
+            nombreProduccion: nombreProd,
+            nombreImg: nombreImg
+        }
+        await addDoc(nuevaProduccion, produccion)
+        limpiarCampos();
+    }
+
+    function limpiarCampos() {
+        campos.forEach(e => {
+            e.value = "";
+        });
+
+        check.forEach(e => {
+            e.checked=false;
+        })
+    }
+
    return (
       <section className="panel-container">
-         <Nav />
-         <section className="panel">
-            <section className="panel-carga">
-               <input className="file" type="file"  accept="image/*" />
+            <Nav />
+            <section className="panel">
+                <section className="vista-previa">
+                    <input required id='produccion' onChange={(e) => setNombreProd(e.target.value)} className="texto" type="text" placeholder="Ingresa el nombre de la producción" />
+                    <input required id='url' onChange={(e) => setUrlImg(e.target.value)} type="text" placeholder='Ingresa la url de la imagen' className='texto' />
+                    <input required id='nombre' onChange={(e) => setNombreImg(e.target.value)} type="text" placeholder='Nombre de la imagen' className='texto' />
+                    <textarea required id='descripcion' onChange={(e) => setDescriProd(e.target.value)} className="texto" cols="30" rows="10" placeholder="Agregar descripción de la producción fotografica"></textarea>
+                    <section className="panel-categoria">
+                        <label><input id='radio1' onChange={(e) => setCategoria(e.target.value)} type="radio" name="categoria" value="gastronomia" />Gastronomia</label>
+                        <label ><input id='radio2' onChange={(e) => setCategoria(e.target.value)} type="radio" name="categoria" value="arquitectura" />Arquitectura</label>
+                    </section>
+
+                </section>
+
+
+                <button onClick={agregarProduccion} className="guardar">Guardar</button>
+                <button onClick={limpiarCampos} className="guardar">Cancelar</button>
             </section>
-            <section className="vista-previa">
-               <label className="nombre" >Nombre de producción</label>
-               
-               <input className="texto" type="text" placeholder="" />  
-               <div>
-                  *vista previa imagenes*
-               </div>
-               <textarea className="texto"
-                  cols="30"
-                  rows="10"
-                  placeholder="Agregar descripción de la producción fotografica"></textarea>
-               
-            </section>
-            <section className="panel-categoria">
-               
-               <label className="checkbox"><input type="radio" name="categoria" value="gastronomia" />Gastronomia</label>
-               <label ><input type="radio" name="categoria" value="arquitectura" />Arquitectura</label>
-            </section>
-         
-            <button className="guardar">Guardar</button>
-         </section>
-         
-      </section>
+
+        </section>
+
    );
 };
 
