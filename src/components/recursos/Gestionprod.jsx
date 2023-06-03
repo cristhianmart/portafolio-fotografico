@@ -2,6 +2,7 @@ import Nav from '../helpers/Nav'
 import { dataBase } from '../Firebase/Config'
 import React, { useState, useEffect } from "react";
 import {collection, getDocs, doc, Query, where, query, deleteDoc} from "firebase/firestore";
+import { Link } from 'react-router-dom';
 
 const Gestionprod = () => {
     const [produciones, setProducciones] = useState([]);
@@ -41,7 +42,7 @@ const Gestionprod = () => {
                         <section key={produccion.id} className='card'>
                             <img src={produccion.url} alt="produccion" className='imgProd' />
                             <button className='btnadmi' onClick={()=>(eliminarImagen(produccion.id))}>Eliminar Imagen</button>
-                            <button className='btnadmi'>Editar Imagen</button>
+                            <Link to={'/editar/'+ produccion.id}><button className='btnadmi'>Editar Imagen</button></Link>
                         </section>
                     ))
                   }  
