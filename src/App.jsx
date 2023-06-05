@@ -12,6 +12,7 @@ import Cargarimg from "./components/recursos/Cargarimg";
 import Gestionprod from "./components/recursos/Gestionprod";
 import Modificarbio from "./components/recursos/Modificarbio";
 import Editarprod from "./components/recursos/Editarprod";
+import Admin from "./components/recursos/Admin";
 
 const router = createBrowserRouter([
    {
@@ -58,7 +59,7 @@ const router = createBrowserRouter([
    //inicia login
    {
       path: "/admin",
-      element: <Login />,
+      element: <Admin />,
       errorElement: <h1>Pagina no encontrada</h1>,
    },
    //inicia administrador

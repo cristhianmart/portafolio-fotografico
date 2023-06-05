@@ -1,5 +1,6 @@
 import React from 'react'
 import fotousu from '../../assets/img/fotousu.png'
+import { Link } from 'react-router-dom'
 
 function Login() {
   return (
