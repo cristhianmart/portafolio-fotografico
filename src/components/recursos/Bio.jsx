@@ -8,25 +8,22 @@ import Footer from '../helpers/Footer'
 const Bio = () => {
   return (
     <section >
-      <Header/>
-      
+      <Header />
+
       <section className='Bio'>
-      <div>
-  <img src={fotoB} alt="" className='imgBio'/>
-  </div>
-  <div className='textoBio'>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, modi. Illo, aspernatur iure delectus tempora ullam voluptatum odio eius, quod quasi tenetur quibusdam fugit neque pariatur accusamus debitis possimus velit!
-      Inventore, saepe magni. Iure soluta eveniet quos voluptate reprehenderit. Cumque voluptates ad vero exercitationem, iusto molestiae cupiditate nemo! Autem dolore consequuntur quae, ex aperiam culpa facere dolor ducimus atque vel.
-      Numquam i fugit assumenda culpa, natus ea mollitia enim officiis dolores laboriosam doloribus molestias doloremque quisquam. Qui harum porro culpa fugiat consectetur magni eaque, tenetur unde.
-      Numquam iure quia maiores hic quos unde exercitationem autem, temporibus architecto? Nostrum aperiam, nesciunt iure accusamus sequi dicta soluta repellendus neque molestiae non perspiciatis voluptatibus magnam officia dignissimos et eligendi!
-      Quisquam mollitia magni laborum fugiat itaque nostrum voluptatum distinctio eveniet omnis, accusamus fugit placeat soluta consequatur! Eaque facere sint at neque dignissimos?
-    </p>
-  </div>
-      
-  </section>
-  <Footer/>
-  </section>
+        <div>
+          <img src={fotoB} alt="" className='imgBio' />
+        </div>
+        <div className='textoBio'>
+          <p>
+
+            Oscar Eduardo Cano Sepúlveda es un arquitecto graduado de la universidad Pontificia Bolivariana y fotógrafo graduado de la institución educativa Cesde. Su actividad económica principal es la arquitectura el cual buscando incrementar su nivel de creatividad incursiona en la fotografía, cuenta con dos páginas de Instagram por medio de las cuales publica todos sus proyectos y es la fuente principal para el contacto con sus clientes,  una ellas es su cuenta personal  y la segunda con el nombre comercial PRIXMA PH donde publica sus principales proyectos que se encuentran enfocados al campo arquitectónico y producciones de alimentos, actualmente las personas que se interesan en sus producciones lo contactan por medio de whatsapp, donde el arquitecto Eduardo realiza sus cotizaciones y organiza el plan de trabajo con sus clientes.
+          </p>
+        </div>
+
+      </section>
+      <Footer />
+    </section>
 
   )
 }
