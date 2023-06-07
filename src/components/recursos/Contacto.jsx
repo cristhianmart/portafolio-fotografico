@@ -84,7 +84,7 @@ function Contacto() {
                   <textarea
                      className="inputmensaje"
                      type="text"
-                     placeholder=" Escriba su mensaje"
+                     placeholder="    Escriba su mensaje"
                      onChange={(e) => setMensaje(e.target.value)}
                      value={mensaje}
                   />

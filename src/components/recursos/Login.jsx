@@ -27,7 +27,7 @@ function Login() {
             </div>
           </div>
           <div className='cont-btnlogin'>
-          <Link className="buttonlogin" to={'/gestion'}>Login</Link>
+          <Link className="buttonlogin" to={'/gestion'}>Ingresar</Link>
           </div>
         </div>
       </div>
