@@ -1,22 +1,23 @@
 import {useState} from "react";
 import Nav from "../helpers/Nav";
-import { dataBase } from '../Firebase/Config'
+import { dataBase, subirImagen } from '../Firebase/Config'
 import { addDoc, collection } from "firebase/firestore";
 
 
 const Cargarimg = () => {
     const [nombreProd, setNombreProd] = useState('');
-    const [urlImg, setUrlImg] = useState('');
     const [descriProd, setDescriProd] = useState('');
     const [nombreImg, setNombreImg] = useState('');
     const [categoria, setCategoria] = useState('');
+    const [img, setImg] = useState(null);
 
     const campos = [document.querySelector("#produccion"), document.querySelector("#url"), document.querySelector("#nombre"), document.querySelector("#descripcion")]
     const check = [document.querySelector("#radio1"), document.querySelector("#radio2")]
     async function agregarProduccion() {
+        const resultado = await subirImagen(img);
         const nuevaProduccion = collection(dataBase, 'Producciones')
         const produccion = {
-            url: urlImg,
+            url: resultado,
             descripcion: descriProd,
             categoria: categoria,
             nombreProduccion: nombreProd,
@@ -41,8 +42,8 @@ const Cargarimg = () => {
             <Nav />
             <section className="panel">
                 <section className="vista-previa">
+                <input required id='url' onChange={(e) => setImg(e.target.files[0])} type="file" placeholder='Ingresa la url de la imagen' className='texto' />
                     <input required id='produccion' onChange={(e) => setNombreProd(e.target.value)} className="texto" type="text" placeholder="Ingresa el nombre de la producción" />
-                    <input required id='url' onChange={(e) => setUrlImg(e.target.value)} type="text" placeholder='Ingresa la url de la imagen' className='texto' />
                     <input required id='nombre' onChange={(e) => setNombreImg(e.target.value)} type="text" placeholder='Nombre de la imagen' className='texto' />
                     <textarea required id='descripcion' onChange={(e) => setDescriProd(e.target.value)} className="texto" cols="30" rows="10" placeholder="Agregar descripción de la producción fotografica"></textarea>
                     <section className="panel-categoria">
