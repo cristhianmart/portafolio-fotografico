@@ -1,56 +1,54 @@
-
-
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
 }
 
 /*Inicia nav*/
 
 .h-admi {
-    background: black;
-    width: 20%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    border-right: solid 3px black;
-    padding-bottom: 170px;
+  background: black;
+  width: 20%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  border-right: solid 3px black;
+  padding-bottom: 170px;
 }
 
 .nav-admi {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .sublista {
-    margin-top: 80px;
-    border: solid 1px black;
-    background-color: #f3c23f;
-    border-radius: 15px;
-    width: 250px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+  margin-top: 80px;
+  border: solid 1px black;
+  background-color: #f3c23f;
+  border-radius: 15px;
+  width: 250px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .sublista:hover {
-    background-color: #ffe057;
+  background-color: #ffe057;
 }
 
 .link {
-    text-decoration: none;
-    color: black;
-    font-size: 15px;
-    font-weight: bolder;
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+  font-weight: bolder;
 }
 
 .link::first-letter {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 /*Fin nav*/
@@ -69,7 +67,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  
+
 }
 
 
@@ -141,8 +139,9 @@
   width: 70%;
 }
 
-.btn-admi {
-  width: 1000px;
+.btn-carg {
+  display: flex;
+  gap: 20px;
 }
 
 
@@ -151,47 +150,61 @@
 
 /*Inicia Gestionprod */
 .panel-gestion {
-    background: linear-gradient(90deg, black 60%, #f3c23f);
-    display: flex;
-    border: solid 2px blue;
+  background: linear-gradient(90deg, black 60%, #f3c23f);
+  display: flex;
 }
 
 .panel-consulta {
-    display: flex;
-    justify-content: space-around;
-    align-items:center ;
-    width: 100%;
-    flex-direction: column;
+  width: 100%;
+  border: 1px solid red;
+}
+.consulta-input {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+#valor {
+  width: 356px;
+  background-color: black;
+  color: #f3c23f;
+  border: none;
+}
+
+#valor::placeholder {
+  color: #f3c23f;
+}
+
+.card-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
 }
 
 .card {
-    height: 50%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .card img {
-    width: 400px;
-    height: 300px;
-    margin: 10px 10px;
-    border: solid 1px white;
-}
-
-.prueba {
-  width: 400px;
-  height: 400px;
-  z-index: 10;
+  width: 300px;
+  height: 200px;
+  margin: 20px 20px;
+  border: solid 1px white;
 }
 
 .btnadmi {
-    background-color: #f3c23f;
-    width: 300px;
-    padding: 10px;
-    font-size: medium;
-    font-weight: bolder;
-    border-radius: 15px;
+  background-color: #f3c23f;
+  width: 150px;
+  padding: 5px;
+  font-size: 15px;
+  border-radius: 15px;
 }
 
 
@@ -200,12 +213,12 @@
 
 /*Inicia Modificarbio*/
 .modificar {
-    background-color: #f3c23f;
-    width: 20%;
-    padding: 7px;
-    font-size: small;
-    font-weight: bolder;
-    border-radius: 15px;
+  background-color: #f3c23f;
+  width: 20%;
+  padding: 7px;
+  font-size: small;
+  font-weight: bolder;
+  border-radius: 15px;
 }
 
 /*Inicia Modificarbio*/
@@ -213,163 +226,132 @@
 /*inicia contacto*/
 
 .contacto {
-    height: 100%;
-    width: 100%;
-    background-color: black;
+  height: 100%;
+  width: 100%;
+  background-color: black;
 }
 
 .form-contacto {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-   
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
 }
 
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+
 .input {
-    display: flex;
-    height: 45px;
-    width: 600px;
-    background-color: white;
-  
-    border-style: solid 10px;
-    border-radius: 30px;
-    border-color: #f3c623;
-    font-family: 'Roboto Mono', monoespaciado;
-    font-size: 30px;
-    margin-top: 25px;
-    padding: 2px;
-    justify-content: center;
-    
+  display: flex;
+  height: 45px;
+  width: 600px;
+  background-color: white;
+  border-style: solid 10px;
+  border-radius: 30px;
+  border-color: #f3c623;
+  font-family: 'Roboto Mono', monoespaciado;
+  font-size: 20px;
+  margin-top: 25px;
+  padding: 2px;
+  justify-content: center;
+
 }
-::placeholder{
-  color: black
-}
+
 
 .inputmensaje {
 
-    display: flex;
-    background-color: white;
-    border-radius: 50px;
-    border-style: solid 10px;
-    height: 350px;
-    width: 600px;
-    border-color: #f3c623;
-    margin-top: 25px;
-    padding: 2px;
-    font-family: 'Roboto Mono', monoespaciado;
-    font-size: 30px;
-    justify-content: center;
-    align-items: center;
-    
-}
-
-.buttoncontacto {
-    background-color: #f3c623;
-    height: 72px;
-    width: 130px;
-    border-radius: 30px;
-    border-color: black;
-    padding: 10px;
-    margin-left: 40%;
-    margin-top: 30px;
-    font-family: 'Roboto Mono', monoespaciado;
-    font-size: 30px;
-    color: black;
-
-  display: flex;
   background-color: white;
   border-radius: 30px;
-  border-style: solid 10px;
   height: 350px;
   width: 600px;
-  border-color: #F3C623;
+  border: solid 1px #f3c623;
   margin-top: 25px;
-  padding: 2px;
   font-family: 'Roboto Mono', monoespaciado;
-  font-size: 30px;
-  justify-content: center;
-  align-items: center;
+  font-size: 20px;
 
 }
 
 .buttoncontacto {
   background-color: #F3C623;
-  height: 72px;
+  height: 50px;
   width: 130px;
   border-radius: 30px;
   border-color: black;
   padding: 10px;
-  margin-left: 40%;
-  margin-top: 30px;
   font-family: 'Roboto Mono', monoespaciado;
-  font-size: 30px;
+  font-size: 20px;
   color: black;
   text-align: center;
-
 }
 
 .fotografo {
-    height: 700px;
-    width: 500px;
-   
+  height: 700px;
+  width: 500px;
+
 }
 
 .fotografo img {
-    height: 100%;
-    width: 100%;
-    border-radius: 10px;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
 }
 
 /*fin contacto */
 
 /*inicia login*/
 .login {
-    background-color: black;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  background-color: black;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .fotousuario {
-    height: 250px;
-    width: 300px;
- 
+  height: 250px;
+  width: 300px;
+
 }
+
 .fotousuario img {
-    height: 250px;
-    width: 300px;
+  height: 250px;
+  width: 300px;
 }
 
 .check {
-    padding: 25px;
-    margin-top: 40px;
-    font-family: 'Roboto Mono', monoespaciado;
-    font-size: 30px;
-    color: #f3c623;
-    display: flex;
-    align-items: center;
-    gap: 50px;
+  padding: 25px;
+  margin-top: 40px;
+  font-family: 'Roboto Mono', monoespaciado;
+  font-size: 30px;
+  color: #f3c623;
+  display: flex;
+  align-items: center;
+  gap: 50px;
 }
 
 .cont-btnlogin {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .buttonlogin {
-    background-color: #f3c623;
-    height: 62px;
-    width: 200px;
-    border-radius: 20px;
-    border-color: black;
-    font-family: 'Roboto Mono', monoespaciado;
-    font-size: 30px;
-    color: black;
-    text-decoration: none;
-    margin-top: 10px;
+  background-color: #f3c623;
+  height: 62px;
+  width: 200px;
+  border-radius: 20px;
+  border-color: black;
+  font-family: 'Roboto Mono', monoespaciado;
+  font-size: 30px;
+  color: black;
+  text-decoration: none;
+  margin-top: 10px;
 }
 
 /*finaliza login*/
@@ -377,145 +359,151 @@
 /*Inicia Header y pagina princial*/
 
 .body {
-    width: 100%;
-    height: 100vh;
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    background-color: black;
-    font-family: 'Roboto', sans-serif;
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  background-color: black;
+  font-family: 'Roboto', sans-serif;
 }
 
 body {
-    width: 100%;
-    height: 100vh;
-  }
-  
-  .encabezado {
-    width: 100%;
-    height: 20%;
-    background: linear-gradient(90deg, black , #f3c23f );
-  
-  }
-  
-  .menu {
-    display: flex;
-    
-  }
-  
-  .logo {
-    width: 30%;
-    display: flex;
-    margin-left: 20%;
-    align-items: center;
-    height: 200px;
-   
-  }
-  .logo {
+  width: 100%;
+  height: 100vh;
+}
+
+.encabezado {
+  width: 100%;
+  height: 20%;
+  background: linear-gradient(90deg, black, #f3c23f);
+
+}
+
+.menu {
+  display: flex;
+
+}
+
+.logo {
+  width: 30%;
+  display: flex;
+  margin-left: 20%;
+  align-items: center;
+  height: 200px;
+
+}
+
+.logo {
   width: 150px;
   height: 150px;
-  
-    
-  
-  }
-  .menu-navegacion {
-    display: flex;
-    justify-content: space-evenly;
-  }
-  .menu-navegacion a{
-    margin: auto;
-    text-decoration:none;
-  
-    
-  }
+
+
+
+}
+
+.menu-navegacion {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.menu-navegacion a {
+  margin: auto;
+  text-decoration: none;
+
+
+}
+
 .boton {
-    border-radius: 20px;
-    text-decoration: none;
-    justify-content: center;
-    color: black;
-    text-align: center;
-    background-color: #f3c23f;
-    margin-left: 3%;
-    margin-block-end: 2%;
+  border-radius: 20px;
+  text-decoration: none;
+  justify-content: center;
+  color: black;
+  text-align: center;
+  background-color: #f3c23f;
+  margin-left: 3%;
+  margin-block-end: 2%;
 }
 
 a {
-    width: 200px;
-    padding: 15px;
-    text-align: center;
-    cursor: pointer;
-    transition: ease-in-out 0.4s;
-    text-transform: uppercase;
-    color: #f3c23f;
-    font-family: 'Roboto Mono', monoespaciado;
-    font-size: 20px;
-    font-weight: bolder;
+  width: 200px;
+  padding: 15px;
+  text-align: center;
+  cursor: pointer;
+  transition: ease-in-out 0.4s;
+  text-transform: uppercase;
+  color: #f3c23f;
+  font-family: 'Roboto Mono', monoespaciado;
+  font-size: 20px;
+  font-weight: bolder;
 }
 
 a:hover {
-    transition: ease-in-out 0.4s;
-    background-color: 2px 2px 2px white;
-    color:white;
+  transition: ease-in-out 0.4s;
+  background-color: 2px 2px 2px white;
+  color: white;
 }
 
 .imagenes {
-    width: 300px;
-    height: 300px;
-    border-radius: 5%;
-    margin-left: 10%;
-    margin-top: 1%;
-   
+  width: 300px;
+  height: 300px;
+  border-radius: 5%;
+  margin-left: 10%;
+  margin-top: 1%;
+
 }
 
 .vistapp {
-    background-color: black;
-    width: 100%;
-    height: 100%;
-    padding-top: 2%;
-    display: flex;
-    gap: 200px;
-    flex-wrap: wrap;
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  padding-top: 2%;
+  display: flex;
+  gap: 200px;
+  flex-wrap: wrap;
 }
 
 .footer {
 
-    width: 100%;
-    height: 20%;
-    color: #F3C623;
-    text-align: center;
-    background: black;
-    padding: 30px;
-    font-family: 'Roboto Mono', monoespaciado;
-    font-size: 20px;
-    font-weight: bolder;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  height: 20%;
+  color: #F3C623;
+  text-align: center;
+  background: black;
+  padding: 30px;
+  font-family: 'Roboto Mono', monoespaciado;
+  font-size: 20px;
+  font-weight: bolder;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
 
 }
-  .imginsta{
-    width: 40px;
-    height: 40px;
-    background-color: #F3C623;
-    border-radius: 10px;
-  }
-  
+
+.imginsta {
+  width: 40px;
+  height: 40px;
+  background-color: #F3C623;
+  border-radius: 10px;
+}
+
 
 /*finaliza header y vista principal*/
 
 
 /*inicia bio pagina principal*/
-.Bio{
+.Bio {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
   background-color: black;
 }
-.textoBio{
+
+.textoBio {
   display: flex;
-  background: linear-gradient(90deg,#f3c23f, white  );
+  background: linear-gradient(90deg, #f3c23f, white);
   align-items: center;
   margin-top: 5%;
   margin-left: 5%;
@@ -525,33 +513,37 @@ a:hover {
   padding: 20px;
   text-align: justify;
   font-family: 'Roboto Mono', monoespaciado;
-    font-size: 20px;
-    font-weight: bolder;
-    
-  
+  font-size: 20px;
+  font-weight: bolder;
+
+
 
 
 }
-.imgBio{
+
+.imgBio {
   margin-top: 1%;
   margin-left: 5%;
   margin-right: 100%;
   width: 400px;
-  
+
 }
+
 /*finaliza bio pagina principal*/
 
 /*incia vista de producciones pagina principal*/
-.produccion{
+.produccion {
   display: flex;
   align-items: center;
   justify-content: center;
-  
+
 }
-.fondoproduccion{
-    background-color: black;
+
+.fondoproduccion {
+  background-color: black;
 }
-.imgProduccion{
+
+.imgProduccion {
   margin-top: 15%;
   margin-left: 15%;
   margin-right: 100%;
@@ -559,9 +551,10 @@ a:hover {
   height: 300px;
   border-radius: 5%;
 }
-.textoProduccion{
+
+.textoProduccion {
   display: flex;
-  background: linear-gradient(90deg,#f3c23f, white  );
+  background: linear-gradient(90deg, #f3c23f, white);
   border-radius: 10px;
   align-items: center;
   margin-top: 5%;
@@ -571,19 +564,21 @@ a:hover {
   padding: 20px;
   text-align: justify;
   font-family: 'Roboto Mono', monoespaciado;
-    font-size: 20px;
-    font-weight: bolder;
-  
+  font-size: 20px;
+  font-weight: bolder;
+
 
 }
-.sectionProduccion{
+
+.sectionProduccion {
   margin-top: 2%;
   margin-left: 12%;
   margin-right: 3%;
   height: 10%;
-  
+
 }
-.tituloproduccion{
+
+.tituloproduccion {
   text-align: center;
   color: #f3c23f;
   margin-top: 5%;
@@ -593,4 +588,3 @@ a:hover {
 }
 
 /*finaliza vista de producciones pagina principal*/
-
