@@ -7,12 +7,11 @@ import Produccion3 from "./components/recursos/Produccion3";
 import Produccion4 from "./components/recursos/Produccion4";
 import Produccion5 from "./components/recursos/Produccion5";
 import Contacto from "./components/recursos/Contacto";
-import Login from "./components/recursos/Login";
 import Cargarimg from "./components/recursos/Cargarimg";
 import Gestionprod from "./components/recursos/Gestionprod";
-import Modificarbio from "./components/recursos/Modificarbio";
 import Editarprod from "./components/recursos/Editarprod";
 import Admin from "./components/recursos/Admin";
+
 
 const router = createBrowserRouter([
    {
@@ -73,16 +72,13 @@ const router = createBrowserRouter([
       element: <Gestionprod />,
       errorElement: <h1>Pagina no encontrada</h1>,
    },
-   {
-      path: "/modificarbio",
-      element: <Modificarbio />,
-      errorElement: <h1>Pagina no encontrada</h1>,
-   },
+
    {
       path: "/editar/:id",
       element: <Editarprod />,
       errorElement: <h1>Pagina no encontrada</h1>,
    },
+   
 ]);
 function App() {
    return (

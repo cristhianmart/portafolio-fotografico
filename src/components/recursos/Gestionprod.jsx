@@ -17,11 +17,11 @@ const Gestionprod = () => {
     const [nombreprod, setNombreprod] = useState('')
     const produccionCollection = collection(dataBase, 'Producciones')
 
-
     const q = query(
         produccionCollection,
         where('nombreProduccion', '==', nombreprod.toString())
     )
+
     const getProduccion = async () => {
         const data = await getDocs(q)
         setProducciones(data.docs.map((doc) => ({...doc.data(), id: doc.id})))

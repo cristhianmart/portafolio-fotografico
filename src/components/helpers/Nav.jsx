@@ -10,9 +10,6 @@ const Nav = () => {
                <li className="sublista">
                <Link to={'/gestion'} className="link">gestionar Producción</Link>
                </li>
-               <li className="sublista">
-               <Link to={'/modificarbio'} className="link">modificar Biografía</Link>
-               </li>
             </ul>
          </nav>
       </header>

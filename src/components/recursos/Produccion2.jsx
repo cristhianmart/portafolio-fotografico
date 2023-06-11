@@ -1,38 +1,32 @@
-
 import Header from '../helpers/Header'
-import mcdonals from '../../assets/img/mcdonalds.png'
-import { Link } from 'react-router-dom'
 import Footer from '../helpers/Footer'
+import uno from '../../assets/Produccion2/1.jpg'
+import dos from '../../assets/Produccion2/2.jpg'
+import tres from '../../assets/Produccion2/3.jpg'
+import cuatro from '../../assets/Produccion2/4.jpg'
+import cinco from '../../assets/Produccion2/5.jpg'
+import seis from '../../assets/Produccion2/6.jpg'
 
 const Produccion2 = () => {
   return (
     <section className='fondoproduccion'>
-        <Header/>
-        <p className='tituloproduccion'>McDonald´s</p>
+    <Header />
+    <h2 className='tituloproduccion'>PIELES DE ARQUITECTURA</h2>
+    <p>Descripción</p>
     <section className='produccion'>
-      <div>
-      <img src={mcdonals} alt="" className='imgProduccion'/> 
-      </div>
-      <div className='textoProduccion'>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil placeat optio doloribus fugit earum vitae totam id, deserunt distinctio? Earum vel quibusdam a odio assumenda illum sapiente laudantium laborum iusto.
-      At, facilis ullam cumque quidem corrupti esse iste nisi consectetur ut sapiente molestias ab dolorum? Dicta harum ducimus enim deserunt maiores ut ipsam. Voluptatem nihil fugiat, asperiores alias rem quis.
-      Aperiam debitis veniam optio, quis fugit culpa! Explicabo eos corporis, perspiciatis incidunt distinctio aliquam neque pariatur cupiditate officiis optio rerum consequuntur libero veniam, velit a numquam aut amet ea laboriosam?
-      Beatae suscipit laborum, doloremque, alias culpa fuga eum ab ea provident atque accusamus odit eius tempore nostrum ipsa quia libero eveniet harum, adipisci non unde nobis? Ducimus magni eius laboriosam?
-      E quo id vero enim consequatur! Quisquam tempore soluta cumque reprehenderit eaque veritatis voluptatibus officia nam? Illum doloremque laboriosam, culpa corporis unde quaerat.</p>
-        </div>
-        </section>
-       <div className='sectionProduccion'>
-       <Link><img src={mcdonals} alt="" className='imagenes'/></Link>
-       <Link><img src={mcdonals} alt="" className='imagenes'/></Link>
-       <Link><img src={mcdonals} alt="" className='imagenes'/></Link>
-       <Link><img src={mcdonals} alt="" className='imagenes'/></Link>
-       <Link><img src={mcdonals} alt="" className='imagenes'/></Link>
-       <Link><img src={mcdonals} alt="" className='imagenes'/></Link>
-        
-      
-        </div>
-        <Footer/>
+
     </section>
+    <div className='sectionProduccion'>
+      <img src={uno} alt="" className='imagenes' />
+      <img src={dos} alt="" className='imagenes' />
+      <img src={tres} alt="" className='imagenes' />
+      <img src={cuatro} alt="" className='imagenes' />
+      <img src={cinco} alt="" className='imagenes' />
+      <img src={seis} alt="" className='imagenes' />
+
+    </div>
+    <Footer />
+  </section>
   )
 }
 
