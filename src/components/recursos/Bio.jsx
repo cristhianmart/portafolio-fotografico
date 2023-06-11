@@ -9,7 +9,6 @@ const Bio = () => {
   return (
     <section >
       <Header />
-
       <section className='Bio'>
         <div>
           <img src={fotoB} alt="" className='imgBio' />

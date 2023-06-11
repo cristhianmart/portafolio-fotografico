@@ -25,6 +25,7 @@ const Cargarimg = () => {
             nombreImg: nombreImg
         }
         await addDoc(nuevaProduccion, produccion)
+        alert("La imagen fue guardada con exito")
         limpiarCampos();
     }
 
@@ -54,9 +55,11 @@ const Cargarimg = () => {
 
                 </section>
 
-
+                <div className="btn-carg">
                 <button onClick={agregarProduccion} className="btnadmi">Guardar</button>
                 <button onClick={limpiarCampos} className="btnadmi">Cancelar</button>
+                </div>
+                
             </section>
 
         </section>

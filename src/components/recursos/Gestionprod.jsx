@@ -48,12 +48,20 @@ const Gestionprod = () => {
                 <div className="consulta-input">
                     <input
                         type="text"
-                        placeholder="ingrese el nombre de la colección que desea modificar"
+                        placeholder="ingrese aquí el nombre de la colección que desea modificar"
                         onChange={(e) => setNombreprod(e.target.value)}
                         id="valor"
                     />
+                     <section className='btn-carg'>
+                    <button className="btnadmi" onClick={getProduccion}>
+                        Consultar
+                    </button>
+                    <button className="btnadmi" onClick={limpiarCampos}>
+                        Cancelar
+                    </button>
+                </section>
                 </div>
-                <section>
+                <section className='card-container'>
                     {produciones.map((produccion) => (
                         <section key={produccion.id} className="card">
                             <img
@@ -61,6 +69,7 @@ const Gestionprod = () => {
                                 alt="produccion"
                                 className="imgProd"
                             />
+                            <div className='.btn-carg'>
                             <button
                                 className="btnadmi"
                                 onClick={() => eliminarImagen(produccion.id)}>
@@ -71,16 +80,10 @@ const Gestionprod = () => {
                                     Editar Imagen
                                 </button>
                             </Link>
+                            </div>
+                            
                         </section>
                     ))}
-                </section>
-                <section>
-                    <button className="btnadmi" onClick={getProduccion}>
-                        Consultar
-                    </button>
-                    <button className="btnadmi" onClick={limpiarCampos}>
-                        Cancelar
-                    </button>
                 </section>
             </section>
         </section>
