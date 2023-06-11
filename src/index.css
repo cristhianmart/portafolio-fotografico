@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2? family= Roboto:wght@300 & display=swap');
+
 
 * {
     box-sizing: border-box;
@@ -179,7 +179,11 @@
     border: solid 1px white;
 }
 
-
+.prueba {
+  width: 400px;
+  height: 400px;
+  z-index: 10;
+}
 
 .btnadmi {
     background-color: #f3c23f;
@@ -474,25 +478,27 @@ a:hover {
 }
 
 .footer {
- 
-    margin-top: 0.5%;
+
     width: 100%;
     height: 20%;
-    color: black;
+    color: #F3C623;
     text-align: center;
-    background: linear-gradient(60deg,#f3c23f, black  );
+    background: black;
     padding: 30px;
     font-family: 'Roboto Mono', monoespaciado;
     font-size: 20px;
     font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 
 }
   .imginsta{
-    flex-wrap: wrap;
-    width: 100px;
-    height: 100px;
-    margin-left: 80%; 
+    width: 40px;
+    height: 40px;
+    background-color: #F3C623;
+    border-radius: 10px;
   }
   
 

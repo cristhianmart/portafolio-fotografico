@@ -13,6 +13,7 @@ const Cargarimg = () => {
 
     const campos = [document.querySelector("#produccion"), document.querySelector("#url"), document.querySelector("#nombre"), document.querySelector("#descripcion")]
     const check = [document.querySelector("#radio1"), document.querySelector("#radio2")]
+    
     async function agregarProduccion() {
         const resultado = await subirImagen(img);
         const nuevaProduccion = collection(dataBase, 'Producciones')
