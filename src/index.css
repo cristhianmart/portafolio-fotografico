@@ -587,4 +587,13 @@ a:hover {
   font-weight: bolder;
 }
 
+p{
+  text-align: center;
+  color: #f3c23f;
+  margin-top: 5%;
+  font-family: 'Roboto Mono', monoespaciado;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
 /*finaliza vista de producciones pagina principal*/

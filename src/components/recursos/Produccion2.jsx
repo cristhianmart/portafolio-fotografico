@@ -12,7 +12,7 @@ const Produccion2 = () => {
     <section className='fondoproduccion'>
     <Header />
     <h2 className='tituloproduccion'>PIELES DE ARQUITECTURA</h2>
-    <p>Descripción</p>
+    <p>Arquitectura Artística</p>
     <section className='produccion'>
 
     </section>

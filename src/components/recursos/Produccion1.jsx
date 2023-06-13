@@ -14,7 +14,7 @@ const Produccion1 = () => {
     <section className='fondoproduccion'>
       <Header />
       <h2 className='tituloproduccion'>CASA ALICANTE</h2>
-      <p>Descripción</p>
+      <p>Arquitectura Residencial</p>
       <section className='produccion'>
 
       </section>
