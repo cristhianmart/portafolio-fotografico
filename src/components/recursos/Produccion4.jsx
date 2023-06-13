@@ -12,8 +12,8 @@ const Produccion4 = () => {
   return (
     <section className='fondoproduccion'>
     <Header />
-    <h2 className='tituloproduccion'>ESCUELA INDIGENA</h2>
-    <p>Descripción</p>
+    <h2 className='tituloproduccion'>ESCUELAS INDIGENAS</h2>
+    <p>Arquitectura Institucional</p>
     <section className='produccion'>
 
     </section>
