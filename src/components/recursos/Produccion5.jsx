@@ -13,7 +13,8 @@ const Produccion5 = () => {
     <section className='fondoproduccion'>
     <Header />
     <h2 className='tituloproduccion'>CIRCUITO MUSEOGRÁFICO</h2>
-    <p>Arquitectura e Interíorismo</p>
+    <h3>Arquitectura e Interíorismo</h3>
+    <p className='pprodu'>Muros interiores como lienzos de la Historia de EPM</p>
     <section className='produccion'>
 
     </section>

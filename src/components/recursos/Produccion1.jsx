@@ -14,7 +14,9 @@ const Produccion1 = () => {
     <section className='fondoproduccion'>
       <Header />
       <h2 className='tituloproduccion'>CASA ALICANTE</h2>
-      <p>Arquitectura Residencial</p>
+      <h3>Arquitectura Residencial</h3>
+      <p className='pprodu'>La Casa como el espacio de integración, de oración; 
+         una casa abierta que integra el paisaje, rodeada de vegetación.</p>
       <section className='produccion'>
 
       </section>

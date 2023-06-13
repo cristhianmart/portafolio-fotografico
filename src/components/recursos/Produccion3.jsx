@@ -12,7 +12,9 @@ const Produccion3 = () => {
     <section className='fondoproduccion'>
     <Header />
     <h2 className='tituloproduccion'>PUNTOS FIJOS</h2>
-    <p>Arquitectura Artística</p>
+    <h3>Arquitectura Artística</h3>
+    <p className='pprodu'>Las escaleras como los elementos escultóricos que comunican los distintos espacios y niveles
+			 creando una circulación vertical.</p>
     <section className='produccion'>
 
     </section>

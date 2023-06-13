@@ -12,7 +12,10 @@ const Produccion2 = () => {
     <section className='fondoproduccion'>
     <Header />
     <h2 className='tituloproduccion'>PIELES DE ARQUITECTURA</h2>
-    <p>Arquitectura Artística</p>
+    <h3>Arquitectura Artística</h3>
+    <p className='pprodu'>En arquitectura se habla de la piel, haciendo alusión al tratamiento de las fachadas y
+		   cubiertas, es decir la envolvente del edificio que está en contacto directo con el medio que
+			 lo rodea.</p>
     <section className='produccion'>
 
     </section>
