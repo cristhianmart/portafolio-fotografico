@@ -13,7 +13,8 @@ const Produccion4 = () => {
     <section className='fondoproduccion'>
     <Header />
     <h2 className='tituloproduccion'>ESCUELAS INDIGENAS</h2>
-    <p>Arquitectura Institucional</p>
+    <h3>Arquitectura Institucional</h3>
+    <p className='pprodu'>La Escuela como Pabellón de integración cultural</p>
     <section className='produccion'>
 
     </section>

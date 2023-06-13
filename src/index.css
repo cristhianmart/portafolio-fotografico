@@ -515,6 +515,7 @@ a:hover {
   font-family: 'Roboto Mono', monoespaciado;
   font-size: 20px;
   font-weight: bolder;
+  
 
 
 
@@ -589,7 +590,7 @@ a:hover {
 
 p{
   text-align: center;
-  color: #f3c23f;
+  color:black;
   margin-top: 5%;
   font-family: 'Roboto Mono', monoespaciado;
   font-size: 20px;
@@ -597,3 +598,21 @@ p{
 }
 
 /*finaliza vista de producciones pagina principal*/
+/*inicia modificacion produccion*/
+.pprodu{
+  text-align: center;
+  color:#f3c23f;
+  margin-top: 5%;
+  font-family: 'Roboto Mono', monoespaciado;
+  font-size: 20px;
+  font-weight: bolder;
+}
+h3{
+  text-align: center;
+  color:#f3c23f;
+  margin-top: 5%;
+  font-family: 'Roboto Mono', monoespaciado;
+  font-size: 15px;
+  font-weight: bolder;
+  text-decoration-line:underline;
+}
